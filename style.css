@@ -1,0 +1,1033 @@
+/*PARAM: url_images = http://i.les-forums.com/i/ */
+
+/* la feuille de style par défaut */
+
+body {
+	padding : 0px;
+	margin : 0px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img {
+	border : none;
+}
+form {
+	margin : 0px;
+}
+div#div_forum {
+	margin : auto;
+	width : 90%;
+}
+h1#pave_titre {
+	width : 100%;
+	border-style : solid;
+	border-width : 1px;
+	padding : 1em 0;
+	font-size : 16px !important;
+	text-align : center;
+	font-weight : bold;
+}
+table.liste {
+	border-collapse : collapse;
+	border-spacing : 0px;
+	margin-left : auto;
+	margin-right : auto;
+	width : 100%;
+	border-style : solid;
+	border-width : 1px;
+}
+tr.liste_titre th {
+	font-weight : bold;
+	height : 30px;
+	padding :  5px 4px 4px 4px;
+	text-align : center;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	border-top-style : solid;
+	border-top-width : 3px;
+}
+tr.liste_ligne td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	height : 25px;
+	text-align : left;
+	padding-left : 3px;
+	padding-right : 3px;
+}
+tr.forums_ligne td {
+	height : 35px;
+}
+tr.forums_categorie th {
+	font-weight : bold;
+	height : 27px;
+	padding-left : 10px;
+	text-align : left;
+	font-style : italic;
+}
+tr.liste_ligne td.forums_colonne_nom {
+	padding-left : 3px;
+}
+tr.liste_ligne td.forums_colonne_nom .forums_nom {
+	font-weight : normal;
+}
+td.forums_colonne_nbmessages, td.forums_colonne_nbtopics, td.topics_colonne_nombre {
+	width : 50px;
+}
+tr.liste_ligne td.forums_colonne_dernier, tr.liste_ligne td.topics_colonne_dernier {
+	text-align : center;
+}
+tr.liste_ligne td.forums_colonne_nbtopics, tr.liste_ligne td.forums_colonne_nbmessages {
+	text-align : center;
+}
+tr.liste_ligne td.topics_colonne_auteur, tr.liste_ligne td.topics_colonne_nombre {
+	text-align : center;
+}
+tr.liste_ligne td.forums_colonne_icone {
+	width : 20px;
+}
+tr.liste_ligne td.topics_colonne_icone, tr.liste_ligne td.topics_colonne_actions {
+	width : 50px;
+	white-space : nowrap;
+}
+tr.liste_ligne td.forums_colonne_icone, tr.liste_ligne td.topics_colonne_icone, tr.liste_ligne td.topics_colonne_actions {
+	text-align : center;
+	white-space : nowrap;
+}
+tr.liste_ligne td.topics_colonne_sujet {
+	font-weight : normal;
+	padding-left : 3px;
+}
+table.users_liste {
+	margin-bottom : 1em;
+}
+table.users_liste td {
+	text-align : center;
+}
+table.users_liste img {
+	margin : 1px;
+}
+div.users_compteur {
+	border-style : solid;
+	border-width : 1px;
+	width : 100%;
+	text-align : center;
+	margin : 0em auto;
+	padding : 0.5em 0em;
+	border-top : none;
+}
+div.users_compteur_0 {
+	margin-bottom : 1em;
+}
+table.users_grades {
+	border-spacing : 0px;
+	border-collapse : collapse;
+	margin : 0em auto;
+	width : 100%;
+	border-style : solid;
+	border-width : 1px;
+	border-top : none;
+}
+table.users_grades th {
+	width : 60px;
+	text-align : center;
+}
+table.users_grades td.users_grade_aucun {
+	width : 160px;
+	text-align : center;
+	white-space : nowrap;
+}
+table.users_grades td {
+	text-align : center;
+	padding : 0px;
+}
+table.users_grades a, table.users_grades span {
+	padding : 0px 10px;
+}
+table.users_grades span {
+	font-weight : bold;
+	border : none;
+}
+table.ligne_liens {
+	border-spacing : 0px;
+	border-collapse : collapse;
+	margin : 3px auto;
+	width : 100%;
+}
+table.ligne_liens_haut {
+	margin-top : 0px;
+}
+table.ligne_liens_bas {
+	margin-bottom : 1em;
+}
+table.ligne_liens td {
+	padding : 0px;
+	border : 0px;
+}
+td.gauche_ligne_liens {
+	text-align : left;
+}
+td.droite_ligne_liens {
+	text-align : right;
+}
+table.message {
+	border-style : solid;
+	border-width : 1px;
+	border-spacing : 0px;
+	margin : 3px auto 0px auto;
+	width : 100%;
+}
+.message_preview {
+	border-style : solid;
+	border-width : 1px;
+	margin : 5px;
+	padding : 5px;
+}
+.message_preview_label {
+	font-weight : bold;
+	margin : 15px 0 10px 5px;
+}
+.message_preview_label p {
+	cursor : pointer;
+}
+table.message_profil {
+	margin-bottom : 1em;
+}
+.zone_profil {
+	padding : 1em;
+}
+div.info_profil {
+	margin-bottom : 1em;
+}
+table.premier_message {
+	margin-top : 0px;
+}
+table.message_historique {
+	margin-bottom : 1em;
+}
+div.message_sujet {
+	text-align : left;
+}
+td.message_zone_message_date_sujet {
+	padding : 0px;
+}
+td.message_zone_pseudo {
+	padding : 5px;
+	width : 150px;
+	border-right-style : solid;
+	border-right-width : 1px;
+	text-align : center;
+}
+table.apercu_zone_pseudo {
+	border-style : solid;
+	border-width : 1px;
+	border-collapse : collapse;
+	border-spacing : 0px;
+	margin-top : 1em;
+}
+td.message_zone_pseudo .message_lien_pseudo {
+	font-weight : bold;
+}
+td.message_zone_pseudo .message_signature {
+	margin-left : auto;
+	margin-right : auto;
+	width : 145px;
+	overflow : hidden;
+}
+div.message_date {
+	float : right;
+	width : 180px;
+	text-align : right;
+}
+div.message_zone_date_sujet {
+	padding : 3px;
+	height : 15px;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	overflow : hidden;
+}
+div.message_message {
+	padding : 5px;
+	text-align : left;
+}
+p.commentaire_message {
+	margin : 10px 0px 5px 0px;
+	font-style : italic;
+}
+td.message_zone_actions {
+	padding : 2px;
+	padding-top : 25px;
+	width : 25px;
+	border-left-style : solid;
+	border-left-width : 1px;
+	text-align : center;
+}
+td.message_zone_actions img {
+	margin-bottom : 2px;
+}
+td.message_zone_pseudo div.separateur {
+	margin-top : 5px;
+	margin-bottom : 5px;
+	height : 1px;
+	width : 10px;
+	margin-left : auto;
+	margin-right : auto;
+	border-top-style : solid;
+	border-top-width : 2px;
+}
+td.message_zone_pseudo div.separateur span {
+	visibility : hidden;
+}
+
+table#message_edit {
+	margin : 0em auto 1em auto;
+}
+table#message_edit td.message_zone_pseudo {
+	width : 170px;
+}
+table#message_edit div.message_zone_date_sujet {
+	padding : 5px;
+	padding-bottom : 8px;
+}
+table#message_edit div.message_zone_date_sujet input, table#message_edit div.message_message textarea {
+	width : 98%;
+}
+table#message_edit div.message_choix_icone {
+	width : 100%;
+	text-align : center;
+}
+table#message_edit div.message_choix_icone table {
+	border-spacing : 0px;
+	border-collapse : collapse;
+	margin : auto;
+}
+table#message_edit div.message_choix_icone td {
+	text-align : left;
+	padding : 2px 1px;
+	white-space : nowrap;
+}
+table#message_edit div.message_choix_icone td * {
+	vertical-align : middle;
+}
+table#message_edit div.message_boutons_edition {
+	line-height : 20px;
+	text-align : center;
+}
+table#message_edit div.message_boutons_edition a {
+	cursor : pointer;
+	padding-left : 5px;
+	padding-right : 5px;
+}
+#navigateur_ie table#message_edit div.message_zone_date_sujet input, #navigateur_ie table#message_edit div.message_message textarea {
+	width : 98%;
+}
+table#message_edit div.message_legal {
+	font-weight : bold;
+	text-align : center;
+}
+table#message_edit td.zone_smileys_plus {
+	padding : 5px;
+	border-left-style : solid;
+	border-left-width : 1px;
+}
+table#message_edit td.zone_smileys_plus div#div_smileys_plus {
+	height : 290px;
+	width : 100px;
+	overflow : auto;
+}
+table#message_edit .zone_validation {
+	margin-top : 10px;
+	margin-bottom : 5px;
+	text-align : center;
+}
+blockquote.citation_titre {
+	font-weight : bold;
+	margin-bottom : 0px;
+}
+blockquote.citation {
+	margin-top : 2px;
+	border-style : solid;
+	border-width : 1px;
+	padding : 3px;
+}
+.cadre_infos {
+	border-style : solid;
+	border-width : 1px;
+	width : 100%;
+	margin : 0em auto 1em auto;
+}
+.cadre_infos_contenu {
+	padding : 1em;
+}
+.formulaire_conteneur {
+	float : left;
+}
+.formulaire {
+	border-style : solid;
+	border-width : 1px;
+	margin : 0em auto 1em auto;
+}
+.formulaire_contenu {
+	padding : 0.5em;
+}
+.cadre_infos .formulaire {
+	margin : 0px;
+	margin-top : 1em;
+}
+.zone_pages {
+	float : left;
+	border-style : solid;
+	border-width : 1px;
+/*  margin-left : -1px;*/
+}
+.zone_pages a, .zone_pages b {
+	display : block;
+}
+.zone_pages a {
+	cursor : pointer;
+}
+.page {
+	float : left;
+	padding : 2px 0.5em;
+	border-left-style : solid;
+	border-left-width : 1px;
+}
+.page_infos {
+	border-left : 0px;
+	font-weight : bold;
+}
+.page_en_cours {
+	font-weight : bold;
+}
+.zone_liens_ctxt {
+	float : right;
+	border-style : solid;
+	border-width : 1px;
+/*  margin-right : -1px;*/
+}
+.zone_liens_ctxt_messages {
+	margin-right : 0px;
+}
+.lien_ctxt {
+	float : left;
+	padding : 2px 0.5em;
+	border-left-style : solid;
+	border-left-width : 1px;
+}
+.zone_liens_ctxt a {
+	display : block;
+	cursor : pointer;
+}
+.zone_liens_ctxt a.premier_ctxt {
+	border-left : none;
+}
+.zone_liens_ctxt_topics div.lien_ctxt, .zone_liens_ctxt_messages div.lien_ctxt {
+	padding-bottom : 0px;
+	padding-top : 0px;
+}
+.menu_select_forum {
+	display : inline;
+	margin : 0px;
+	padding : 0px;
+}
+.menu_select_forum option, .menu_select_forum optgroup {
+	font-size : inherit;
+}
+input#go_button_bas, input#go_button_haut {
+	background-color: transparent;
+	border : none;
+	cursor : pointer;
+}
+.menu_select_filtre {
+	display : inline;
+	margin : 0px;
+	padding : 0px;
+}
+table#nav_haut {
+	border-spacing : 0px;
+	margin : 1em auto 1em auto;
+	width : 100%;
+}
+table#nav_haut td#nav_haut_gauche, table#nav_haut td#nav_haut_droite {
+	padding : 0px;
+}
+div#nav_gauche {
+	float : left;
+	background : white;
+	padding : 5px;
+	border-style : solid;
+	border-width : 1px;
+}
+div#nav_droite {
+	xfloat : right;
+	border-style : solid;
+	border-width : 1px;
+}
+div#nav_droite table {
+	border-collapse : collapse;
+	border-spacing : 0px;
+	background : white;
+}
+div#nav_droite td.zones_nav_droite {
+	border-top-style : solid;
+	border-top-width : 1px;
+	padding : 0px;
+}
+div#nav_droite #nav_droite_conteneur {
+	width : 100%;
+}
+div#nav_droite th {
+	text-align : right;
+	padding : 1px 0.5em;
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-right-style : solid;
+	border-right-width : 1px;
+}
+div#nav_droite tr#ligne_nav_droite_identite td.zones_nav_droite, div#nav_droite tr#ligne_nav_droite_identite th,
+div#nav_droite tr#ligne_nav_droite_anonyme td.zones_nav_droite, div#nav_droite tr#ligne_nav_droite_anonyme th {
+	border-top : 0px;
+}
+div#nav_droite ul.zones_nav_droite_conteneur {
+	list-style : none;
+	padding : 0;
+	margin : 0;
+}
+div#nav_droite .zones_nav_droite_conteneur li {
+	display : block;
+	float : left;
+}
+* html div.div_identifie div#nav_droite #ligne_nav_droite_outils .zones_nav_droite_conteneur li,
+* html div.div_anonyme div#nav_droite #ligne_nav_droite_anonyme .zones_nav_droite_conteneur li { /* ie */
+	white-space : nowrap;
+	display : inline;
+	float : none;
+	width : auto;
+}
+div#nav_droite .zones_nav_droite_conteneur li .zone_nav_droite {
+	cursor : pointer;
+	display : block;
+	text-align : center;
+	white-space : nowrap;
+	padding : 3px 0.5em;
+	border-left-style : solid;
+	border-left-width : 1px;
+	vertical-align : middle;
+}
+div#nav_droite ul.zones_nav_droite_conteneur li.premiere_zone_nav_droite .zone_nav_droite {
+	border-left : 0px;
+}
+div#nav_droite .zones_nav_droite_conteneur li span.zone_nav_droite {
+	padding : 1px 0.5em;
+}
+div#nav_droite tr#ligne_nav_droite_filtres input {
+	background-color: transparent;
+	border : none;
+	cursor : pointer;
+}
+* html div.div_identifie div#nav_droite #ligne_nav_droite_outils .zones_nav_droite_conteneur li .zone_nav_droite,
+* html div.div_anonyme div#nav_droite #ligne_nav_droite_anonyme .zones_nav_droite_conteneur li .zone_nav_droite { /* ie */
+	float : left;
+}
+div#nav_droite #ligne_nav_droite_filtres .zones_nav_droite_conteneur li, div#nav_droite #ligne_nav_droite_liens_admin .zones_nav_droite_conteneur li {
+	width : auto !important;
+}
+div#nav_droite #ligne_nav_droite_outils .zones_nav_droite_conteneur li#zone_nav_droite_messagerie {
+	padding-right : 3px;
+}
+* html div#nav_droite #ligne_nav_droite_outils .zones_nav_droite_conteneur li#zone_nav_droite_messagerie { /* ie */
+	padding-right : 0;
+}
+div#nav_droite #ligne_nav_droite_filtres .zones_nav_droite_conteneur li#zone_nav_droite_favoris {
+	width : 40% !important;
+}
+div#nav_droite #ligne_nav_droite_filtres option, div#nav_droite #ligne_nav_droite_filtres optgroup {
+	font-size : inherit;
+}
+table.nav_haut_mode2 {
+	border-style : solid;
+	border-width : 1px;
+}
+table.nav_haut_mode2 div#nav_gauche {
+	border : none;
+	background-color : transparent;
+}
+table.nav_haut_mode2 div#nav_droite {
+	margin : 2px;
+}
+table.nav_haut_mode3 div#nav_gauche {
+	border : none;
+	background-color : transparent;
+}
+
+div.message_boutons_edition a {
+	border-right-style : solid;
+	border-right-width : 1px;
+}
+div.message_boutons_edition a.dernier_bouton {
+	border-right : 0px;
+}
+
+div.cadre_message {
+	border-style : solid;
+	border-width : 1px;
+	width : 100%;
+	text-align : center;
+	font-weight : bold;
+	margin : 0em auto 1em auto;
+}
+.cadre_message_contenu {
+	padding : 1em;
+}
+
+#footer {
+	border-style : solid;
+	border-width : 1px;
+	width : 100%;
+	text-align : center;
+	margin : 0em auto 1em auto;
+	display : block !important;
+	visibility : visible !important;
+	overflow : auto;
+}
+#footer .footer_content {
+	padding : 0.5em;
+	display : block !important;
+	visibility : visible !important;
+}
+#footer .footer_block {
+	float : left;
+	width : 18%;
+	padding : 0.9%;
+	text-align : left;
+}
+#footer .footer_block h3 {
+	margin-top : 0;
+	font-size : 90%;
+	border-bottom-width : 1px;
+	border-bottom-style : solid;
+}
+#footer ul, #footer li {
+	list-style : none;
+	margin : 0;
+	padding : 0;
+}
+#footer li {
+	font-size : 90%;
+	line-height : 1.8em;
+}
+#footer a {
+	font-size : 100%;
+}
+#footer li li {
+	margin-left: 1.5em;
+}
+
+div.cadre_erreur {
+	border-style : solid;
+	border-width : 1px;
+	width : 100%;
+	text-align : center;
+	font-weight : bold;
+	font-style : italic;
+	margin : 0em auto 1em auto;
+}
+.cadre_erreur_contenu {
+	padding : 1em;
+}
+div.cadre_erreur p {
+	margin-bottom : 0px;
+}
+.form_sendmail td {
+	white-space : nowrap;
+}
+.form_sendmail textarea, .form_sendmail input#sendmail_sujet {
+	width : 330px;
+}
+.zone_liens_zones_admin, .users_types, .users_lettres {
+	border-spacing : 0px;
+	border-collapse : collapse;
+	margin : 0em auto;
+	width : 100%;
+	border-style : solid;
+	border-width : 1px;
+}
+.zone_liens_zones_admin .zone_liens_zone_admin_description a {
+	display : inline;
+}
+.users_lettres {
+	border-top : none;
+}
+.zone_liens_zones_admin td, .users_types td, .users_lettres td {
+	text-align : center;
+	border-style : solid;
+	border-width : 1px;
+	padding : 3px;
+}
+.zone_liens_zones_admin td.lien_zone_admin_en_cours, .users_types td.users_type_en_cours, .users_lettres td.users_lettre_en_cours {
+	font-weight : bold;
+	border-bottom : none;
+}
+.zone_liens_zones_admin td.zone_liens_zone_admin_description {
+	font-weight : bold;
+	border-top : none;
+	padding : 5px;
+}
+.zone_liens_zones_admin a, .users_types a, .users_lettres a {
+	display : block;
+}
+#admin_zone_accueil div {
+	border-top : none;
+	margin-bottom : 4px;
+}
+#admin_zone_accueil span {
+	float : left;
+	width : 190px;
+}
+#admin_zone_accueil a {
+	font-weight : bold;
+}
+#admin_zone_pro div.cadre_infos {
+	border-top : none;
+	margin-bottom : 4px;
+	line-height : 1.3em;
+	line-height : 1.5em;
+}
+#admin_zone_pro div.cadre_infos .cadre_message {
+	margin-bottom : 20px
+}
+#admin_zone_pro div.cadre_infos #pro-launch-offer {
+	font-weight : bold;
+	line-height : 1.8em;
+}
+#admin_zone_pro div.cadre_infos #pro-launch-offer strong {
+	color : red;
+	display : block;
+}
+#admin_zone_pro div.cadre_infos p {
+	margin-bottom : 20px;
+}
+#admin_zone_pro div.cadre_infos p.note {
+	font-size : 80%;
+}
+#admin_zone_pro div.cadre_infos .pro-next {
+	text-align : right;
+	margin-top : -34px;
+}
+#admin_zone_pro div.cadre_infos .pro-next a {
+	font-size : 120%;
+	color : red;
+	font-weight : bold;
+}
+#admin_zone_pro div.cadre_infos #pro-prices {
+	float : right;
+	width : 120px;
+}
+#admin_zone_pro div.cadre_infos #pro-prices table {
+	font-weight : normal;
+	width : 120px;
+	margin : -12px;
+}
+#admin_zone_pro div.cadre_infos #pro-prices table td,
+#admin_zone_pro div.cadre_infos #pro-prices table th {
+	text-align : left;
+	padding : 2px 5px;
+	vertical-align : bottom;
+}
+#admin_zone_pro div.cadre_infos #pro-prices table .duree {
+	text-align : right;
+}
+#admin_zone_pro div.cadre_infos #pro-prices table tr.duree-1-an td {
+	font-weight : bold;
+	color : red;
+}
+#admin_zone_pro .pb_name {
+	width : 150px;
+}
+#admin_zone_pro .pb_link {
+	width : 300px;
+}
+.ligne_admin_boutons {
+	text-align : center;
+}
+.formulaire_admin {
+	border-style : solid;
+	border-width : 1px;
+	border-top-width : 0px;
+	border-spacing : 0px;
+	border-collapse : collapse;
+	width : 100%;
+	margin : 0em auto 1em auto;
+}
+#formulaire_admin_ssforum, #formulaire_supp_ssforum, #formulaire_supp_forum {
+	border-top-width : 1px;
+}
+.formulaire_admin input[type=checkbox] {
+	margin-left : 0px;
+}
+.formulaire_admin th {
+	border-right-style : solid;
+	border-right-width : 1px;
+	text-align : left;
+	width : 100px;
+	white-space : nowrap;
+}
+.formulaire_admin th, .formulaire_admin td {
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	padding : 4px;
+}
+.formulaire_admin .infos_admin {
+	padding-top : 2px;
+	font-weight : normal;
+}
+.formulaire_admin #ligne_admin_site td label {
+	font-weight : bold;
+	float : left;
+	width : 70px;
+}
+.formulaire_admin #ligne_admin_admin_mod b {
+	display : block;
+	margin : 2px 0px;
+}
+#admin_titre, #admin_pause_texte, #admin_site, #admin_titre_site, #admin_grade_administrateur, #admin_grade_moderateur, #admin_chemin_etapes, #admin_url_theme, #admin_background_image, #admin_autre_font_family, #admin_complement_body, #admin_favicon, #admin_url_images, #admin_url_smileys, #admin_url_css, #admin_url_js, #admin_zone_apparence_theme textarea, #admin_zone_apparence_integration textarea, #ssforum_nom, #ssforum_description, #ssforum_categorie, #formulaire_admin_ssforum textarea, #admin_memo, #admin_pro_top_img, #admin_pro_top_url, #admin_pro_top_text, #admin_pro_bottom_0_name, #admin_pro_bottom_1_name  {
+	width : 450px;
+}
+#admin_pro_promotion, #admin_pro_host {
+	width : 200px;
+}
+#admin_zone_forums .formulaire_admin th {
+	text-align : center;
+}
+#admin_zone_forums .formulaire_admin td {
+	text-align : center;
+}
+#admin_zone_forums .formulaire_admin tr.admin_ssforums_titres th {
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+}
+#admin_zone_forums .formulaire_admin tr.admin_ssforums_categorie th {
+	height : 27px;
+	padding-left : 10px;
+	text-align : left;
+	font-style : italic;
+}
+#admin_zone_forums .formulaire_admin td.admin_ssforums_nom {
+	white-space : nowrap;
+	text-align : left;
+}
+#admin_zone_forums .formulaire_admin td.admin_ssforums_action img {
+	margin : 1px;
+}
+#admin_zone_forums .formulaire_admin tr.admin_ssforums_nouveau td {
+	text-align : left;
+	border-top-style : solid;
+	border-top-width : 3px;
+	border-bottom-width : 3px;
+}
+
+#admin_zone_grades .formulaire_admin tr.admin_grades_titres th {
+	text-align : center;
+}
+#admin_zone_grades .formulaire_admin td.admin_grades_nom {
+	width : 40%;
+	text-align : center;
+}
+#admin_zone_grades .formulaire_admin td.admin_grades_nom input {
+	width : 100%;
+	text-align : center;
+}
+#admin_zone_grades .formulaire_admin td.admin_grades_nb {
+	width : 15%;
+	text-align : center;
+}
+#admin_zone_grades .formulaire_admin td.admin_grades_util {
+	width : 40%;
+	text-align : center;
+}
+#admin_zone_grades .formulaire_admin td.admin_grades_action {
+	width : 5%;
+	text-align : center;
+}
+#admin_zone_etapes .formulaire_admin img {
+	margin : 1px;
+}
+#admin_zone_etapes .formulaire_admin div.admin_etapes_delta {
+	font-weight : bold;
+	margin-bottom : 5px;
+	margin-top : 3px;
+}
+#admin_zone_smileys .formulaire_admin tr.admin_smileys_titres th {
+	text-align : center;
+}
+#admin_zone_smileys .formulaire_admin td.admin_smileys_code {
+	width : 20%;
+	text-align : center;
+}
+#admin_zone_smileys .formulaire_admin td.admin_smileys_adresse {
+	width : 50%;
+	text-align : center;
+}
+#admin_zone_smileys .formulaire_admin td.admin_smileys_img {
+	width : 30%;
+	text-align : center;
+}
+#admin_zone_smileys .formulaire_admin td.admin_smileys_code input, #admin_zone_smileys .formulaire_admin td.admin_smileys_adresse input {
+	width : 95%;
+	text-align : center;
+}
+#admin_zone_smileys #ligne_admin_smileys_visibles table {
+	width : 90%;
+	margin : auto;
+}
+#admin_zone_smileys #ligne_admin_smileys_visibles table img {
+	margin : 0 15px 0 5px;
+}
+#admin_zone_smileys #ligne_admin_smileys_visibles table td {
+	border : none;
+}
+#admin_zone_apparence_theme .admin_app_titre, #admin_zone_apparence_integration .admin_app_titre, #formulaire_admin_ssforum .ssforum_admin_titre, #formulaire_supp_ssforum .ssforum_admin_titre, #formulaire_supp_forum .admin_titre, #admin_zone_pro .admin_pro_titre {
+	font-weight : bold;
+}
+#admin_zone_apparence_theme .admin_app_sous_titre, #admin_zone_apparence_integration .admin_app_sous_titre, #formulaire_admin_ssforum .ssforum_admin_sous_titre, #admin_zone_pro .admin_pro_sous_titre {
+	font-weight : bold;
+}
+span.selecteur_couleur {
+	cursor : pointer;
+	border : solid black 1px;
+	padding : 1px;
+	background : white url(http://i.les-forums.com/i/picker.png) no-repeat center center;
+}
+tr.liste_titre th {
+	border-left : none;
+	border-right : none;
+}
+
+.minus { text-decoration : line-through; color : red; }
+.plus { color : red; font-weight : bold; }
+.img_left, .img_right { padding:2px; }
+.img_center { padding:2px;display:block;margin-left:auto; margin-right:auto;text-align:center; }
+
+h1.titre_h_msg { font-size: 2.33em !important; font-weight: bold !important; margin: .67em 0;}
+h2.titre_h_msg { font-size: 2em !important; font-weight: bold !important; margin: .83em 0 !important;}
+h3.titre_h_msg { font-size: 1.5em !important; font-weight: bold !important; margin: 1em 0 !important;}
+h4.titre_h_msg { font-size: 1.17em !important; font-weight: bold !important; margin: 1.33em 0 !important;}
+h5.titre_h_msg { font-size: 1em !important; font-weight: bold !important; margin: 1.67em 0 !important;}
+h6.titre_h_msg { font-size: 0.83em !important; font-weight: bold !important; margin: 2.33em 0 !important;}
+
+
+
+/*******************/
+/* et les couleurs */
+/*******************/
+
+/***************************************************
+police
+***************************************************/
+
+* {
+	font-family : "Bitstream Vera Sans", Verdana, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+*.petit, tr.liste_ligne td.forums_colonne_nom .forums_description, .formulaire_admin .infos_admin, .formulaire_admin .infos_admin *, .menu_select_forum select, .menu_select_forum input, #ligne_nav_droite_filtres select, #ligne_nav_droite_filtres input {
+	font-size : 10px;
+}
+.citation_fixe, .citation_fixe * {
+	font-family : Courier, monospace;
+}
+
+/***************************************************
+couleur 0 + texte + liens
+-> fond de page, et texte et liens par défauts, et bordures
+***************************************************/
+
+/** fond **/
+body { background-color : #37B6E5; }
+/** texte **/
+body { color : black; }
+/** liens **/
+a { color: #006E9F; }
+/** survol **/
+a:hover { color: #FF4400; }
+
+/** bordures **/
+#pave_titre, table.liste, table.message, blockquote.citation, .cadre_infos, .formulaire, .zone_pages, .zone_liens_ctxt, div#nav_gauche, div#nav_droite, table.nav_haut_mode2, div.cadre_message, div.cadre_erreur, .zone_liens_zones_admin, .zone_liens_zones_admin td, .users_types, .users_types td, .users_lettres, .users_lettres td, .formulaire_admin, table.apercu_zone_pseudo, div.users_compteur, table.users_grades, .message_preview, #footer { border-color : #7FA6B8; }
+tr.liste_ligne td, td.message_zone_pseudo div.separateur, div#nav_droite td.zones_nav_droite, div#nav_droite th, #admin_zone_forums .formulaire_admin tr.admin_ssforums_nouveau td { border-top-color : #7FA6B8; }
+div#nav_droite th, td.message_zone_pseudo, div.message_boutons_edition a, .formulaire_admin th { border-right-color : #7FA6B8; }
+tr.liste_ligne td, div.message_zone_date_sujet, .formulaire_admin th, .formulaire_admin td, #footer .footer_block h3 { border-bottom-color : #7FA6B8; }
+td.message_zone_actions, table#message_edit td.zone_smileys_plus, .page, .lien_ctxt, div#nav_droite ul.zones_nav_droite_conteneur li .zone_nav_droite { border-left-color : #7FA6B8; }
+
+
+
+/***************************************************
+couleur 1 + couleur texte
+-> titre des listes de forums/topics
+***************************************************/
+
+/** fond **/
+tr.liste_titre th, tr.forums_categorie th, #admin_zone_forums .formulaire_admin th, #admin_zone_grades .formulaire_admin th, #admin_zone_smileys .formulaire_admin tr.admin_smileys_titres th, #admin_zone_apparence_theme .admin_app_titre, #admin_zone_apparence_integration .admin_app_titre, .minipopupfond, #formulaire_admin_ssforum .ssforum_admin_titre, #formulaire_supp_ssforum .ssforum_admin_titre, #formulaire_supp_forum .admin_titre, #admin_zone_pro .admin_pro_titre { background-color : #7FA6B8; }
+
+/** texte **/
+tr.liste_titre th, tr.forums_categorie th, #admin_zone_forums .formulaire_admin th, #admin_zone_grades .formulaire_admin th, #admin_zone_smileys .formulaire_admin tr.admin_smileys_titres th, #admin_zone_apparence_theme .admin_app_titre, #admin_zone_apparence_integration .admin_app_titre, .minipopuptitre, .minipopupclose, .minipopupclose:hover, #formulaire_admin_ssforum .ssforum_admin_titre, #formulaire_supp_ssforum .ssforum_admin_titre, #formulaire_supp_forum .admin_titre, #admin_zone_pro .admin_pro_titre { color : #F5F5FF; }
+
+
+/***************************************************
+couleur 2 + texte + liens
+-> premiere couleur numérotaion de page, et des outils, colonnes secondaires des liste de forums/topics, pourtour des messages
+***************************************************/
+
+/** fond **/
+tr.liste_ligne td.forums_colonne_nbtopics, tr.liste_ligne td.forums_colonne_nbmessages, tr.liste_ligne td.topics_colonne_auteur, tr.liste_ligne td.topics_colonne_nombre, tr.liste_ligne td.forums_colonne_icone, tr.liste_ligne td.topics_colonne_icone, tr.liste_ligne td.topics_colonne_actions, td.message_zone_pseudo, div.message_zone_date_sujet, td.message_zone_actions, table#message_edit td.zone_smileys_plus, .page_infos, div#nav_droite th, .zone_liens_zones_admin td.lien_zone_admin_en_cours, .users_types td.users_type_en_cours, .users_lettres td.users_lettre_en_cours, .zone_liens_zones_admin td.zone_liens_zone_admin_description, #admin_zone_apparence_theme .admin_app_sous_titre, #admin_zone_apparence_integration .admin_app_sous_titre, table.users_grades span, #formulaire_admin_ssforum .ssforum_admin_sous_titre, #admin_zone_pro .admin_pro_sous_titre, #footer { background-color : #CCDDE5; }
+/** bordures **/
+tr.liste_titre th { border-top-color : #CCDDE5; }
+tr.liste_titre th, #admin_zone_forums .formulaire_admin tr.admin_ssforums_titres th { border-bottom-color : #CCDDE5; }
+
+/** texte **/
+tr.liste_ligne td.forums_colonne_nbtopics, tr.liste_ligne td.forums_colonne_nbmessages, tr.liste_ligne td.topics_colonne_auteur, tr.liste_ligne td.topics_colonne_nombre, tr.liste_ligne td.forums_colonne_icone, tr.liste_ligne td.topics_colonne_icone, tr.liste_ligne td.topics_colonne_actions, td.message_zone_pseudo, div.message_zone_date_sujet, td.message_zone_actions, table#message_edit td.zone_smileys_plus, .page_infos, div#nav_droite th, .zone_liens_zones_admin td.lien_zone_admin_en_cours, .users_types td.users_type_en_cours, .users_lettres td.users_lettre_en_cours, .zone_liens_zones_admin td.zone_liens_zone_admin_description, #admin_zone_apparence_theme .admin_app_sous_titre, #admin_zone_apparence_integration .admin_app_sous_titre, table.users_grades span, #formulaire_admin_ssforum .ssforum_admin_sous_titre, #admin_zone_pro .admin_pro_sous_titre, #footer { color : black; }
+
+/** liens **/
+td.message_zone_date_sujet a, td.message_zone_pseudo a, #footer a { color : #0073A5; }
+
+/** survol **/
+td.message_zone_date_sujet a:hover, td.message_zone_pseudo a:hover, #footer a:hover { color : #FF4400; }
+
+
+/***************************************************
+couleur 3 + texte + liens
+-> couleur des lignes impaires des listes de forums/topics, fond des pages, outils..., fond des messages, fond des formulaires dans un cadre de fond différent
+***************************************************/
+
+/** fond **/
+h1#pave_titre, h1#pave_titre, table.liste, tr.liste_ligne td, table.message, blockquote.citation, .cadre_infos .formulaire, .zone_pages, .zone_liens_ctxt, div#nav_gauche, div#nav_droite table, table.nav_haut_mode2, div.cadre_message, div.cadre_erreur, .zone_liens_zones_admin, .users_types, .users_lettres, .formulaire_admin, .minipopup, .zone_profil, div.users_compteur, table.users_grades { background-color : #F5F5FF; }
+
+/** texte **/
+h1#pave_titre, tr.liste_ligne td, div.message_message, .zone_pages, .cadre_infos .formulaire, .zone_liens_ctxt, div#nav_gauche, div.cadre_message, div.cadre_erreur, div#nav_droite ul.zones_nav_droite_conteneur, .zone_liens_zones_admin, .users_types, .users_lettres, .formulaire_admin, .minipopup, .zone_profil, div.users_compteur, table.users_grades th, table.users_grades td, div.zone_validation, div.message_contenu, div.message_preview_label { color : #333333; }
+
+/** liens **/
+tr.liste_ligne td a, div.message_message a, .zone_pages a, .cadre_infos .formulaire a, .zone_liens_ctxt a, div#nav_gauche a, div.cadre_message a, div.cadre_erreur a, div#nav_droite a, div#nav_droite tr#ligne_nav_droite_filtres input, .zone_liens_zones_admin a, .users_lettres a, .users_types a, .formulaire_admin a, .minipopup a, input#go_button_bas, input#go_button_haut, .zone_profil a, table.users_grades td a, div.message_contenu a, div.message_preview_label a { color : #006E9F; }
+
+/** survol **/
+tr.liste_ligne td a:hover, div.message_message a:hover, .zone_pages a:hover, .cadre_infos .formulaire a:hover, .zone_liens_ctxt a:hover, div#nav_gauche a:hover, div.cadre_message a:hover, div.cadre_erreur a:hover, div#nav_droite a:hover, div#nav_droite tr#ligne_nav_droite_filtres input:hover, .zone_liens_zones_admin a:hover, .users_types a:hover, .users_lettres a:hover, .formulaire_admin a:hover, .minipopup a:hover, input#go_button_bas:hover, input#go_button_haut:hover, .zone_profil a:hover, table.users_grades td a:hover, div.message_contenu a:hover, div.message_preview_label a:hover { color : #FF4400; }
+
+/***************************************************
+couleur 4 + texte + liens
+-> couleur des lignes paires des listes de forums/topics, fond des cadres d'information et des formulaires non dans un cadre de font différent
+***************************************************/
+
+/** fond **/
+tr.liste_ligne_paire td, .cadre_infos, .formulaire, .formulaire_admin th, .formulaire_admin tr.admin_ligne_paire td, #admin_zone_grades .formulaire_admin tr#ligne_admin_voir_grades th { background-color : #F0F1F3; }
+
+/** texte **/
+tr.liste_ligne_paire td, .cadre_infos, .formulaire, .formulaire_admin th, .formulaire_admin tr.admin_ligne_paire td, #admin_zone_grades .formulaire_admin tr#ligne_admin_voir_grades th { color : #333333; }
+
+/** liens **/
+tr.liste_ligne_paire td a, .cadre_infos a, .formulaire a, .formulaire_admin th a, .formulaire_admin tr.admin_ligne_paire td a { color : #006E9F; }
+
+/** survol **/
+tr.liste_ligne_paire td a:hover, .cadre_infos a:hover, .formulaire a:hover, .formulaire_admin th a:hover, .formulaire_admin tr.admin_ligne_paire td a:hover { color : #FF4400; }
+
